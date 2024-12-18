@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devanshi Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 40px;
+            font-size: 14px;
+        }
+
+        header a {
+            text-decoration: none;
+            color: #000;
+            margin-left: 20px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+            max-width: 1200px;
+        }
+
+        .text-section {
+            flex: 1;
+            font-size: 32px;
+            font-weight: bold;
+            position: relative;
+            text-align: right;
+        }
+
+        .text-section span {
+            display: inline-block;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .text-section span::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: -80px;
+            transform: translateY(-50%);
+            width: 150px;
+            height: 150px;
+            border: 2px solid #000;
+            border-radius: 50%;
+            z-index: -1;
+        }
+
+        .image-section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .image-section img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .about-me {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .about-me a {
+            text-decoration: none;
+            color: #000;
+            font-size: 18px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+            background-color: #fff;
+            border: 2px solid #000;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .circle::before {
+            content: "\2192"; /* Unicode for arrow */
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-size: 14px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="devanshi2.html">Home</a>
+            <a href="devuaboutme.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+        </nav>
+        <a href="devuresume.html">Resume</a>
+    </header>
+
+    <div class="container">
+        <div class="text-section">
+            <span>HI I AM DEVANSHI</span>
+        </div>
+        <div class="image-section">
+            <img src="WhatsApp Image 2024-12-11 at 23.08.04_c7313a3e.jpg" alt="Devanshi">
+        </div>
+        
+    </div>
+
+    <footer>
+        <a href="mailto:devanshiraut500@gmail.com">devanshiraut500@gmail.com</a>
+    </footer>
+</body>
+</html>
